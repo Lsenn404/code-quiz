@@ -1,6 +1,7 @@
 var quiz = document.getElementById("quiz");
-var answer
 var timerEl = document.getElementById('countdown');
+var answer
+
 
 
 
@@ -44,18 +45,7 @@ var question = [
   }
 ]
 
-function quizTimer() {
-  var timeLeft = 90;
-  var timeInterval = interval(function () {
 
-    if (timeLeft > 1) {
-      timerEl.textContent = timeLeft + ' seconds remaining';
-      timeLeft--;
-    }
-    
-    }, 1000);
-
-}
 
 
 
@@ -68,11 +58,14 @@ function homePage() {
 
   document.getElementById('startQuiz').addEventListener('click', function () {
     questionPage(question[0])
+    quizTimer()
   })
 }
 
 function questionPage(theQuestion) {
+  
   quiz.innerHTML = `
+    
     <p>
         ${theQuestion.title}
     </p>
@@ -83,8 +76,27 @@ function questionPage(theQuestion) {
         <li><button> ${theQuestion.answers[3].answer} </button></li>
     </ul>
     `
+ 
+  
+}
+
+function quizTimer() {
+  var timeLeft = 90;
+  var timeInterval = setInterval(function () {
+
+    if (timeLeft > 1) {
+      timerEl.textContent = timeLeft + ' seconds remaining';
+      timeLeft--;
+    }
+    else {
+      clearInterval(timeInterval);
+    }
+    console.log(timeLeft)
+    }, 1000);
 
 }
+
+
 
 function logAnswer() {
   document.getElementById('submitAnswer').addEventListener('click', function () {
@@ -103,7 +115,7 @@ function logAnswer() {
 //when a question is answered wrong, the variable becomes true
 //if the variable is true when the timer function checks it, time is subtracted, the variable is reverted to false
 homePage();
-quizTimer()
+
 
 /*
 var timerEl = document.getElementById('countdown');
