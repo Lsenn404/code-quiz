@@ -8,7 +8,7 @@ Once the quiz ends, the user will get to enter their initials, and their score w
 
 After submitting initials, the user will be returned to the home page
 
-image.png
-image.png
-image.png
-image.png
+![Alt text](Assets/Images/Quiz_Page.png)
+![Alt text](Assets/Images/Record_Initials.png)
+![Alt text](Assets/Images/Scores_Page.png)
+![Alt text](Assets/Images/Start_Page.png)

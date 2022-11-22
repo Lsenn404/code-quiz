@@ -223,12 +223,10 @@ function questionPage(theQuestion) {
           questionPage(question[questionNumber - 1]);
         } else {
           //if the answer is not true, sets the wrong answer variable to true, still goes to the next page
-          
-          incorrect.style.fontSize = '50px';
-          correct.style.display='none';
           if (questionNumber === 5) {
             lastQuestionWrong = true;
           }
+          wrongAnswer = true;
           questionPage(question[questionNumber - 1]);
         }
       }
