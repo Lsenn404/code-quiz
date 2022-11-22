@@ -1,25 +1,14 @@
-# Code-Quiz
+Application will start off on simple home page with two options, start quiz and view high scores
 
-## User Story
+When start quiz button is pressed, a 90 second timer starts, and the user will need to answer 5 questions 
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+Each incorrect answer will take 10 seconds off of the timer, and once all 5 are answered, or the timer hits 0, the quiz ends
 
-## Acceptance Criteria
+Once the quiz ends, the user will get to enter their initials, and their score will be added to the high score list, which is sorted from highest to lowest
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+After submitting initials, the user will be returned to the home page
+
+image.png
+image.png
+image.png
+image.png
