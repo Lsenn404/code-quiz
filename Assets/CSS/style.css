@@ -144,9 +144,9 @@ li + li {
     text-align: center;
 }
 
-#belowCountdown {
+/* #belowCountdown {
 
-}
+} */
 
 /* #wrongRightContainer {
     position: relative;
@@ -162,14 +162,15 @@ li + li {
     color: red;
     font-size: 20px;
     /* transition: opacity 3s;
-    opacity: 0; */
+    opacity: 0; 
+}*/
     
     
-}
+
 #right  {
     margin: 15px;
     color: green;
     font-size: 20px;
     /* transition: opacity 3s;
     opacity: 0; */
-} */
+} 
